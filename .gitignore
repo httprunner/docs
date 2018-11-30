@@ -1,0 +1,7 @@
+.DS_Store
+.pyc
+site/*
+reports/*
+__pycache__/
+.python-version
+Pipfile.lock
