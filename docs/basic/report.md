@@ -3,7 +3,7 @@
 
 ## 默认情况
 
-默认情况下，生成的测试报告文件会位于 reports 根目录下，文件名称为测试开始的时间戳。
+默认情况下，生成的测试报告文件会位于项目根目录的 reports 文件夹中，文件名称为测试开始的时间戳。
 
 ```bash
 $ hrun docs/data/demo-quickstart-2.yml
@@ -21,25 +21,8 @@ Ran 2 tests in 0.031s
 
 OK
 INFO     Start to render Html report ...
-INFO     Generated Html report:
-reports/1532078874.html
+INFO     Generated Html report: reports/1532078874.html
 ```
-
-## 指定报告名称
-
-如需指定生成报告的名称，可以使用 `--html-report-name` 参数。
-
-```bash
-$ hrun docs/data/demo-quickstart-2.yml --html-report-name demo
-...
-同上，省略
-
-INFO     Start to render Html report ...
-INFO     Generated Html report:
-reports/demo/demo-1532078874.html
-```
-
-在 reports 目录下，将会创建一个与指定报告名称相同的文件夹，生成的 HTML 报告将位于该目录中，并且测试报告名称中也会包含测试开始的时间。
 
 ## 默认报告样式
 
@@ -53,19 +36,20 @@ reports/demo/demo-1532078874.html
 
 在 Details 中，会详细展示每一条测试用例的运行结果。
 
-点击测试用例对应的 log 按钮，会在弹出框中展示该用例执行的详细数据，包括请求的 headers 和 body、响应的 headers 和 body、开始请求的时间戳、响应耗时（elapsed）等信息。
+点击测试用例对应的 log 按钮，会在弹出框中展示该用例执行的详细数据，包括请求的 headers 和 body、响应的 headers 和 body、校验结果、响应、响应耗时（elapsed）等信息。
 
-![](/images/report-demo-quickstart-1-log.jpg)
+![](/images/report-demo-quickstart-1-log1.jpg)
+![](/images/report-demo-quickstart-1-log2.jpg)
 
 若测试用例运行不成功（failed/error/skipped），则在该测试用例的 detail 中会出现 traceback 按钮，点击该按钮后，会在弹出框中展示失败的堆栈日志，或者 skipped 的原因。
 
 ![](/images/report-demo-quickstart-1-traceback.jpg)
 
-## 自定义报告模板（Jinja2格式）
+## 自定义
 
 除了默认的报告样式，HttpRunner 还支持使用自定义的报告模板。
 
-### 编写自定义模板
+### 编写自定义模板（Jinja2格式）
 
 自定义模板需要采用 [Jinja2][Jinja2] 的格式，其中可以使用的数据可参考[数据结构示例][summary_data]。
 
@@ -92,19 +76,31 @@ reports/demo/demo-1532078874.html
 
 ### 使用自定义模板
 
-使用自定义模版时，需要通过 `--html-report-template` 指定报告模板的路径，然后测试运行完成后，就会采用自定义的模板生成测试报告。
+使用自定义模版时，需要通过 `--report-template` 指定报告模板的路径，然后测试运行完成后，就会采用自定义的模板生成测试报告。
 
 ```bash
-$ hrun docs/data/demo-quickstart-2.yml --html-report-template /path/to/custom_report_template
+$ hrun docs/data/demo-quickstart-2.yml --report-template /path/to/custom_report_template
 ...
 同上，省略
 
 INFO     render with html report template: /path/to/custom_report_template
 INFO     Start to render Html report ...
-INFO     Generated Html report:
-reports/1532078874.html
+INFO     Generated Html report: reports/1532078874.html
 ```
 
 [Jinja2]: http://jinja.pocoo.org/docs/latest
 [default_report]: https://github.com/HttpRunner/HttpRunner/blob/master/httprunner/templates/report_template.html
 [summary_data]: /development/#_6
+
+### 指定报告生成路径
+
+默认情况下，生成的测试报告文件会位于项目根目录的 reports 文件夹中。如需指定生成报告的路径，可以使用 `--report-dir` 参数。
+
+```bash
+$ hrun docs/data/demo-quickstart-2.yml --dirreport-name /other/path/
+...
+同上，省略
+
+INFO     Start to render Html report ...
+INFO     Generated Html report: /other/path/1532078874.html
+```

@@ -2,9 +2,9 @@
 
 HttpRunner 是一个基于 Python 开发的测试框架，可以运行在 macOS、Linux、Windows 系统平台上。
 
-HttpRunner 的开发环境为 macOS + Python 3.6；实际上，HttpRunner 支持 Python 2.7 和 Python 3.3 以上的所有版本，并使用 Travis-CI 进行了[持续集成测试][travis-ci]，测试覆盖的版本包括 2.7/3.4/3.5/3.6。
+**Python 版本**：HttpRunner 支持 Python 3.4 及以上的所有版本，并使用 Travis-CI 进行了[持续集成测试][travis-ci]，测试覆盖的版本包括 2.7/3.4/3.5/3.6/3.7。虽然 HttpRunner 暂时保留了对 Python 2.7 的兼容支持，但强烈建议使用 Python 3.4 及以上版本。
 
-推荐使用 macOS/Linux + Python 3.6 的运行环境组合。
+**操作系统**：推荐使用 macOS/Linux。
 
 ## 安装方式
 
@@ -52,52 +52,10 @@ httprunner、hrun、ate 三个命令完全等价，功能特性完全相同，�
 
 ```text
 $ hrun -V
-1.4.2
+2.0.0
 
 $ har2case -V
-0.1.8
-```
-
-```text
-$ hrun -h
-Loading .env environment variables...
-usage: main-debug.py [-h] [-V] [--no-html-report]
-                     [--html-report-name HTML_REPORT_NAME]
-                     [--html-report-template HTML_REPORT_TEMPLATE]
-                     [--log-level LOG_LEVEL] [--log-file LOG_FILE]
-                     [--dot-env-path DOT_ENV_PATH] [--failfast]
-                     [--startproject STARTPROJECT]
-                     [--validate [VALIDATE [VALIDATE ...]]]
-                     [--prettify [PRETTIFY [PRETTIFY ...]]]
-                     [testcase_paths [testcase_paths ...]]
-
-One-stop solution for HTTP(S) testing.
-
-positional arguments:
-  testcase_paths        testcase file path
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -V, --version         show version
-  --no-html-report      do not generate html report.
-  --html-report-name HTML_REPORT_NAME
-                        specify html report name, only effective when
-                        generating html report.
-  --html-report-template HTML_REPORT_TEMPLATE
-                        specify html report template path.
-  --log-level LOG_LEVEL
-                        Specify logging level, default is INFO.
-  --log-file LOG_FILE   Write logs to specified file path.
-  --dot-env-path DOT_ENV_PATH
-                        Specify .env file path, which is useful for keeping
-                        sensitive data.
-  --failfast            Stop the test run on the first error or failure.
-  --startproject STARTPROJECT
-                        Specify new project name.
-  --validate [VALIDATE [VALIDATE ...]]
-                        Validate JSON testcase format.
-  --prettify [PRETTIFY [PRETTIFY ...]]
-                        Prettify JSON testcase format.
+0.1.10
 ```
 
 ## 开发者模式
