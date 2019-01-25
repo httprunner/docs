@@ -8,22 +8,16 @@ HttpRunner 是一个基于 Python 开发的测试框架，可以运行在 macOS�
 
 ## 安装方式
 
-HttpRunner 的稳定版本托管在 PyPI 上，可以使用`pip`或者`easy_install`进行安装。
+HttpRunner 的稳定版本托管在 PyPI 上，可以使用 `pip` 进行安装。
 
 ```bash
 $ pip install httprunner
 ```
 
-或者
-
-```bash
-$ easy_install httprunner
-```
-
 如果你需要使用最新的开发版本，那么可以采用项目的 GitHub 仓库地址进行安装：
 
 ```bash
-$ pip install git+https://github.com/HttpRunner/HttpRunner.git#egg=HttpRunner
+$ pip install git+https://github.com/HttpRunner/HttpRunner.git@master
 ```
 
 ## 版本升级
@@ -32,8 +26,7 @@ $ pip install git+https://github.com/HttpRunner/HttpRunner.git#egg=HttpRunner
 
 ```bash
 $ pip install -U HttpRunner
-$ easy_install -U HttpRunner
-$ pip install -U git+https://github.com/HttpRunner/HttpRunner.git#egg=HttpRunner
+$ pip install -U git+https://github.com/HttpRunner/HttpRunner.git@master
 ```
 
 ## 安装校验
@@ -52,10 +45,10 @@ httprunner、hrun、ate 三个命令完全等价，功能特性完全相同，�
 
 ```text
 $ hrun -V
-2.0.0
+2.0.2
 
 $ har2case -V
-0.1.10
+0.2.0
 ```
 
 ## 开发者模式
@@ -93,25 +86,25 @@ $ pipenv run python -m unittest discover
 ```text
 $ pipenv graph
 
-HttpRunner==1.4.2
-  - colorama [required: Any, installed: 0.3.9]
+HttpRunner==2.0.0
+  - colorama [required: Any, installed: 0.4.0]
   - colorlog [required: Any, installed: 3.1.4]
-  - har2case [required: Any, installed: 0.1.8]
-    - PyYAML [required: Any, installed: 3.12]
+  - har2case [required: Any, installed: 0.2.0]
+    - PyYAML [required: Any, installed: 3.13]
   - Jinja2 [required: Any, installed: 2.10]
     - MarkupSafe [required: >=0.23, installed: 1.0]
-  - PyYAML [required: Any, installed: 3.12]
-  - requests [required: Any, installed: 2.18.4]
-    - certifi [required: >=2017.4.17, installed: 2018.4.16]
+  - PyYAML [required: Any, installed: 3.13]
+  - requests [required: Any, installed: 2.20.0]
+    - certifi [required: >=2017.4.17, installed: 2018.10.15]
     - chardet [required: >=3.0.2,<3.1.0, installed: 3.0.4]
-    - idna [required: >=2.5,<2.7, installed: 2.6]
-    - urllib3 [required: <1.23,>=1.21.1, installed: 1.22]
+    - idna [required: >=2.5,<2.8, installed: 2.7]
+    - urllib3 [required: >=1.21.1,<1.25, installed: 1.24]
   - requests-toolbelt [required: Any, installed: 0.8.0]
-    - requests [required: >=2.0.1,<3.0.0, installed: 2.18.4]
-      - certifi [required: >=2017.4.17, installed: 2018.4.16]
+    - requests [required: >=2.0.1,<3.0.0, installed: 2.20.0]
+      - certifi [required: >=2017.4.17, installed: 2018.10.15]
       - chardet [required: >=3.0.2,<3.1.0, installed: 3.0.4]
-      - idna [required: >=2.5,<2.7, installed: 2.6]
-      - urllib3 [required: <1.23,>=1.21.1, installed: 1.22]
+      - idna [required: >=2.5,<2.8, installed: 2.7]
+      - urllib3 [required: >=1.21.1,<1.25, installed: 1.24]
 ```
 
 调试运行方式：
