@@ -9,7 +9,7 @@ HttpRunner 除了作为命令行工具使用外，还可以作为软件包集成
 HttpRunner 以 `类（class）` 的形式对外提供调用支持，类名为`HttpRunner`，导入方式如下：
 
 ```python
-from httprunner import HttpRunner
+from httprunner.api import HttpRunner
 ```
 
 ### 可用初始化参数
@@ -25,7 +25,7 @@ from httprunner import HttpRunner
 例如，如需初始化 `HttpRunner` 时设置 `failfast` 为 False，初始化方式如下所示：
 
 ```python
-from httprunner import HttpRunner
+from httprunner.api import HttpRunner
 
 runner = HttpRunner(failfast=False)
 ```
@@ -130,7 +130,7 @@ runner.run("docs/data/demo-quickstart-2.yml", mapping=override_mapping)
           "url": "http://127.0.0.1:5000/api/get-token",
           "method": "POST",
           "headers": {"Content-Type": "application/json", "app_version": "2.8.6", "device_sn": "FwgRiO7CNA50DSU", "os_platform": "ios", "user_agent": "iOS/10.3"},
-          "json": {"sign": "958a05393efef0ac7c0fb80a7eac45e24fd40c27"}
+          "json": {"sign": "9c0c7e51c91ae963c833a4ccbab8d683c4a90c98"}
         },
         "extract": [
           {"token": "content.token"}
@@ -250,8 +250,8 @@ summary = runner.summary
               "method": "POST",
               "headers": {"User-Agent": "python-requests/2.18.4", "Accept-Encoding": "gzip, deflate", "Accept": "*/*", "Connection": "keep-alive", "Content-Type": "application/json", "app_version": "2.8.6", "device_sn": "FwgRiO7CNA50DSU", "os_platform": "ios", "user_agent": "iOS/10.3", "Content-Length": "52"},
               "start_timestamp": 1538449655.944801,
-              "json": {"sign": "958a05393efef0ac7c0fb80a7eac45e24fd40c27"},
-              "body": b'{"sign": "958a05393efef0ac7c0fb80a7eac45e24fd40c27"}'
+              "json": {"sign": "9c0c7e51c91ae963c833a4ccbab8d683c4a90c98"},
+              "body": b'{"sign": "9c0c7e51c91ae963c833a4ccbab8d683c4a90c98"}'
             },
             "response": {
               "status_code": 200,
