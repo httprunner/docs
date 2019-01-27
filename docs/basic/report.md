@@ -6,23 +6,28 @@
 默认情况下，生成的测试报告文件会位于项目根目录的 reports 文件夹中，文件名称为测试开始的时间戳。
 
 ```bash
-$ hrun docs/data/demo-quickstart-2.yml
+$ hrun docs/data/demo-quickstart-6.yml
+INFO     Start to run testcase: testcase description
 /api/get-token
 INFO     POST http://127.0.0.1:5000/api/get-token
-INFO     status_code: 200, response_time: 24 ms, response_length: 46 bytes
+INFO     status_code: 200, response_time(ms): 10.05 ms, response_length: 46 bytes
+
 .
-/api/users/1000
-INFO     POST http://127.0.0.1:5000/api/users/1000
-INFO     status_code: 201, response_time: 3 ms, response_length: 54 bytes
+/api/users/1548561170497
+INFO     POST http://127.0.0.1:5000/api/users/1548561170497
+INFO     status_code: 201, response_time(ms): 2.88 ms, response_length: 54 bytes
+
 .
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.031s
+Ran 2 tests in 0.034s
 
 OK
 INFO     Start to render Html report ...
-INFO     Generated Html report: reports/1532078874.html
+INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httprunner-docs-v2x/reports/1548561170.html
 ```
+
+点击查看[测试报告](/data/reports/1548561170.html)。
 
 ## 默认报告样式
 
@@ -44,6 +49,8 @@ INFO     Generated Html report: reports/1532078874.html
 若测试用例运行不成功（failed/error/skipped），则在该测试用例的 detail 中会出现 traceback 按钮，点击该按钮后，会在弹出框中展示失败的堆栈日志，或者 skipped 的原因。
 
 ![](/images/report-demo-quickstart-1-traceback.jpg)
+
+点击查看[测试报告](/data/reports/1548561464.html)。
 
 ## 自定义
 
