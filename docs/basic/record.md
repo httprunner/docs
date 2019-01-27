@@ -15,32 +15,24 @@
 
 然后，在命令行终端中运行 har2case 命令，即可将 demo.har 转换为 HttpRunner 的测试用例文件。
 
-
-这里需要说明的是，har2case 可将 HAR 文件转换为 YAML 或 JSON 格式的测试用例，具体转换为什么形式取决于第二个参数（testcase_path）。
-
-```bash
-$ har2case /path/to/demo.har testcase_path
-```
-
-若第二个参数为空，则默认转换为 JSON 格式的测试用例，文件名称和路径与 HAR 源文件相同。
+使用 `har2case` 转换脚本时默认转换为 JSON 格式。
 
 ```bash
 $ har2case docs/data/demo-quickstart.har
+INFO:root:Start to generate testcase.
+INFO:root:dump testcase to JSON format.
 INFO:root:Generate JSON testcase successfully: docs/data/demo-quickstart.json
 ```
 
-若文件后缀为`.yml/.yaml`，则转换生成 YAML 格式的测试用例。
+加上 `-2y`/`--to-yml` 参数后转换为 YAML 格式。
 
 ```bash
-$ har2case docs/data/demo-quickstart.har demo.yml
-INFO:root:Generate YAML testcase successfully: demo.yml
+$ har2case docs/data/demo-quickstart.har -2y
+INFO:root:Start to generate testcase.
+INFO:root:dump testcase to YAML format.
+INFO:root:Generate YAML testcase successfully: docs/data/demo-quickstart.yml
 ```
 
-若文件后缀为`.json`，则转换生成 JSON 格式的测试用例。
-
-```bash
-$ har2case docs/data/demo-quickstart.har demo.json
-INFO:root:Generate JSON testcase successfully: demo.json
-```
+两种格式完全等价，YAML 格式更简洁，JSON 格式支持的工具更丰富，大家可根据个人喜好进行选择。
 
 [har2case]: https://github.com/HttpRunner/har2case
