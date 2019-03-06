@@ -26,7 +26,7 @@
 
 ## 参数定义 & 数据源指定
 
-在 YAML/JSON 测试用例的 config 模块中，新增一个`parameters`字段，参数化的定义均放置在该字段下。
+在 YAML/JSON 测试用例的 config 模块中，新增一个 `parameters` 字段，参数化的定义均放置在该字段下。
 
 定义内容包括参数名称和数据源指定。
 
@@ -108,7 +108,7 @@ user_id
 2000
 ```
 
-然后在 YAML/JSON 测试用例文件中，就可以通过内置的 parameterize（可简写为P）函数引用 CSV 文件。
+然后在 YAML/JSON 测试用例文件中，就可以通过内置的 `parameterize`（可简写为 `P`）函数引用 CSV 文件。
 
 ```yaml
 - config:

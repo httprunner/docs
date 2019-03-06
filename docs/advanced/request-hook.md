@@ -64,7 +64,7 @@ hook 机制分为两个层级：
 
 ## 编写 hook 函数
 
-hook 函数的定义放置在项目的 debugtalk.py 中，在 YAML/JSON 中调用 hook 函数仍然是采用 ${func($a, $b)} 的形式。
+hook 函数的定义放置在项目的 `debugtalk.py` 中，在 YAML/JSON 中调用 hook 函数仍然是采用 `${func($a, $b)}` 的形式。
 
 对于测试用例层面的 hook 函数，与 YAML/JSON 中自定义的函数完全相同，可通过自定义参数传参的形式来实现灵活应用。
 
@@ -73,7 +73,7 @@ def hook_print(msg):
     print(msg)
 ```
 
-对于单个测试用例层面的 hook 函数，除了可传入自定义参数外，还可以传入与当前测试用例相关的信息，包括请求的`$request`和响应的`$response`，用于实现更复杂场景的灵活应用。
+对于单个测试用例层面的 hook 函数，除了可传入自定义参数外，还可以传入与当前测试用例相关的信息，包括请求的 `$request` 和响应的 `$response`，用于实现更复杂场景的灵活应用。
 
 ### setup_hooks
 
