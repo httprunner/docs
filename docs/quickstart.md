@@ -522,6 +522,9 @@ testcases:
 
 重启 flask 应用服务后再次运行测试用例，测试用例运行情况如下所示：
 
+<details>
+<summary>点击查看运行日志</summary>
+
 ```text
 $ hrun docs/data/demo-quickstart-7.json
 INFO     Start to run testcase: create user 1001
@@ -591,6 +594,8 @@ OK
 INFO     Start to render Html report ...
 INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httprunner-docs-v2x/reports/1548518757.html
 ```
+
+</details>
 
 可以看出，测试用例总共运行了 4 次，并且每次运行时都是采用的不同 user_id。
 
