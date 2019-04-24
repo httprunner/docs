@@ -54,6 +54,7 @@ nav:
         - 架构图: concept/architecture.md
         - 项目文件组织: concept/project-structure.md
         - 测试用例组织: concept/testcase-structure.md
+        - 开发规范: concept/dev-rules.md
     - 安装说明: Installation.md
     - 快速上手: quickstart.md
     - 基础功能:
@@ -70,4 +71,6 @@ nav:
     - 性能测试: load-test.md
     - 开发扩展: development.md
     - 常见问题: FAQ.md
+    - 实践案例:
+        - TesterHome 登录: examples/testerhome-login.md
     - 相关资料: related-docs.md
