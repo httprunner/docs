@@ -3,7 +3,7 @@
 # Project information
 site_name: HttpRunner V2.x 中文使用文档
 site_description: HttpRunner V2.x User Documentation
-site_author: 'Leo Lee'
+site_author: 'debugtalk'
 
 # Repository
 repo_name: HttpRunner
@@ -43,34 +43,33 @@ extra:
         language: 'en, jp'
     social:
         - type: globe
-          link: http://debugtalk.com
+          link: https://debugtalk.com
         - type: 'github'
           link: 'https://github.com/httprunner'
 
 # index pages
 nav:
     - 介绍: index.md
-    - 核心概念:
-        - 架构图: concept/architecture.md
-        - 项目文件组织: concept/project-structure.md
-        - 测试用例组织: concept/testcase-structure.md
-        - 开发规范: concept/dev-rules.md
     - 安装说明: Installation.md
     - 快速上手: quickstart.md
-    - 基础功能:
-        - 录制生成用例: basic/record.md
-        - 运行测试: basic/run-test.md
-        - 测试报告: basic/report.md
-    - 高级特性:
-        - hook机制: advanced/request-hook.md
-        - 环境变量: advanced/dot-env.md
-        - 参数化数据驱动: advanced/parameters.md
-        - 测试用例分层: advanced/testcase-layer.md
-        - Validate & Prettify: advanced/validate-pretty.md
-        - 信息安全: advanced/security.md
-    - 性能测试: load-test.md
-    - 开发扩展: development.md
-    - 常见问题: FAQ.md
+    - 测试准备:
+        - 录制生成用例: prepare/record.md
+        - 项目文件组织: prepare/project-structure.md
+        - 测试用例组织: prepare/testcase-structure.md
+        - hook机制: prepare/request-hook.md
+        - 环境变量: prepare/dot-env.md
+        - 测试用例分层: prepare/testcase-layer.md
+        - 参数化数据驱动: prepare/parameters.md
+        - Validate & Prettify: prepare/validate-pretty.md
+        - 信息安全: prepare/security.md
+    - 测试执行:
+        - 运行测试(CLI): run-tests/cli.md
+        - 测试报告: run-tests/report.md
+        - 性能测试: run-tests/load-test.md
+    - 开发扩展:
+        - Pipline: concept/architecture.md
+        - 基础库调用: development.md
+    - FAQ: FAQ.md
     - 实践案例:
         - TesterHome 登录: examples/testerhome-login.md
     - 相关资料: related-docs.md
