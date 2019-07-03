@@ -36,7 +36,7 @@ $ pip install -U git+https://github.com/HttpRunner/HttpRunner.git@master
 - `httprunner`: 核心命令
 - `ate`: 曾经用过的命令（当时框架名称为 ApiTestEngine），功能与 httprunner 完全相同
 - `hrun`: httprunner 的缩写，功能与 httprunner 完全相同
-- `locusts`: 基于 [Locust][Locust] 实现[性能测试](load-test.md)
+- `locusts`: 基于 [Locust][Locust] 实现[性能测试](run-tests/load-test.md)
 - [`har2case`][har2case]: 辅助工具，可将标准通用的 HAR 格式（HTTP Archive）转换为`YAML/JSON`格式的测试用例
 
 httprunner、hrun、ate 三个命令完全等价，功能特性完全相同，个人推荐使用`hrun`命令。

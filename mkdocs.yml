@@ -52,6 +52,8 @@ nav:
     - 介绍: index.md
     - 安装说明: Installation.md
     - 快速上手: quickstart.md
+    - 基础概念:
+        - 名词解释: concept/nominal.md
     - 测试准备:
         - 录制生成用例: prepare/record.md
         - 项目文件组织: prepare/project-structure.md
@@ -67,8 +69,8 @@ nav:
         - 测试报告: run-tests/report.md
         - 性能测试: run-tests/load-test.md
     - 开发扩展:
-        - Pipline: concept/architecture.md
-        - 基础库调用: development.md
+        - Pipline: development/architecture.md
+        - 基础库调用: development/dev-api.md
     - FAQ: FAQ.md
     - 实践案例:
         - TesterHome 登录: examples/testerhome-login.md
