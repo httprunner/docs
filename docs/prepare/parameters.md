@@ -20,7 +20,7 @@
 
 ## 测试用例集（testsuite）准备
 
-从 2.0.0 版本开始，HttpRunner 不再支持在测试用例文件中进行参数化配置；参数化的功能需要在 testsuite 中实现。变更的目的是让测试用例（testcase）的概念更纯粹，关于测试用例和测试用例集的概念定义，详见[《测试用例组织》](/concept/testcase-structure/)。
+从 2.0.0 版本开始，HttpRunner 不再支持在测试用例文件中进行参数化配置；参数化的功能需要在 testsuite 中实现。变更的目的是让测试用例（testcase）的概念更纯粹，关于测试用例和测试用例集的概念定义，详见[《测试用例组织》](/prepare/parameters/)。
 
 参数化机制需要在测试用例集（testsuite）中实现。如需实现数据驱动机制，需要创建一个 testsuite，在 testsuite 中引用测试用例，并定义参数化配置。
 
@@ -38,7 +38,7 @@ testcases:
         testcase: /path/to/testcase2
 ```
 
-需要注意的是，testsuite 和 testcase 的格式存在较大区别，详见[《测试用例组织》](/concept/testcase-structure/)。
+需要注意的是，testsuite 和 testcase 的格式存在较大区别，详见[《测试用例组织》](/prepare/testcase-structure/)。
 
 
 ## 参数配置概述

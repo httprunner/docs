@@ -175,4 +175,4 @@ teardown_hooks 函数放置于 debugtalk.py 中，并且必须包含一个参数
 
 [1]: http://docs.python-requests.org/en/master/api/#main-interface
 [2]: http://debugtalk.com/post/apitestengine-not-only-about-json-api/
-[3]: ../../advanced/request-hook/
+[3]: ../../prepare/request-hook/

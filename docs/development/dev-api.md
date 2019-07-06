@@ -337,6 +337,6 @@ runner.gen_html_report(
 # => reports/demo/demo-1532078874.html
 ```
 
-关于测试报告的详细内容，请查看[测试报告](/basic/report/)部分。
+关于测试报告的详细内容，请查看[测试报告](/run-tests/report/)部分。
 
 [TextTestRunner]: https://docs.python.org/3.6/library/unittest.html#unittest.TextTestRunner

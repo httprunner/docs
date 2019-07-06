@@ -53,7 +53,7 @@ INFO:root:dump testcase to YAML format.
 INFO:root:Generate YAML testcase successfully: docs/data/demo-quickstart.yml
 ```
 
-使用 `har2case` 转换脚本时默认转换为 JSON 格式，加上 `-2y` 参数后转换为 YAML 格式。两种格式完全等价，YAML 格式更简洁，JSON 格式支持的工具更丰富，大家可根据个人喜好进行选择。关于 [har2case][har2case] 的详细使用说明，请查看[《录制生成测试用例》](/basic/record/)。
+使用 `har2case` 转换脚本时默认转换为 JSON 格式，加上 `-2y` 参数后转换为 YAML 格式。两种格式完全等价，YAML 格式更简洁，JSON 格式支持的工具更丰富，大家可根据个人喜好进行选择。关于 [har2case][har2case] 的详细使用说明，请查看[《录制生成测试用例》](/prepare/record/)。
 
 经过转换，在源 demo-quickstart.har 文件的同级目录下生成了相同文件名称的 YAML 格式测试用例文件 [demo-quickstart.yml](data/demo-quickstart.yml)，其内容如下：
 
@@ -110,7 +110,7 @@ INFO:root:Generate YAML testcase successfully: docs/data/demo-quickstart.yml
 
 如上便是 HttpRunner 测试用例的基本结构。
 
-关于测试用例的更多内容，请查看[《测试用例结构描述》](/concept/testcase-structure/)。
+关于测试用例的更多内容，请查看[《测试用例结构描述》](/prepare/testcase-structure/)。
 
 ### 首次运行测试用例
 
@@ -599,7 +599,7 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 可以看出，测试用例总共运行了 4 次，并且每次运行时都是采用的不同 user_id。
 
-关于参数化数据驱动，这里只描述了最简单的场景和使用方式，如需了解更多，请进一步阅读[《数据驱动使用手册》](/advanced/data-driven/)。
+关于参数化数据驱动，这里只描述了最简单的场景和使用方式，如需了解更多，请进一步阅读[《数据驱动使用手册》](/prepare/parameters/)。
 
 [har2case]: https://github.com/HttpRunner/har2case
 
@@ -615,7 +615,7 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 ![](/images/report-demo-quickstart-1-traceback.jpg)
 
-关于测试报告的详细内容，请查看[《测试报告》](/basic/report/)部分。
+关于测试报告的详细内容，请查看[《测试报告》](/run-tests/report/)部分。
 
 ## 总结
 
