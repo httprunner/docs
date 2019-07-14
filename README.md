@@ -4,7 +4,11 @@
 
 本文档托管在`GitHub Pages`上，访问地址：
 
-http://v2x.httprunner.org
+https://cn.httprunner.org （托管在 GitHub Pages）
+
+或者
+
+https://httprunner.debugtalk.com （托管在七牛云 CDN）
 
 ## 本地预览
 
