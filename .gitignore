@@ -1,7 +1,7 @@
 .DS_Store
 .pyc
-site/*
-reports/*
+*/site/*
+*/reports/*
 __pycache__/
 .python-version
 Pipfile.lock
