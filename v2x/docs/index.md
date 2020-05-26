@@ -27,7 +27,7 @@ HttpRunner 是一款面向 HTTP(S) 协议的通用测试框架，只需编写维
 
 关注 HttpRunner 的微信公众号，第一时间获得最新资讯。
 
-![](/images/qrcode_for_httprunner.jpg)
+![](./assets/qrcode.jpg)
 
 
 [httprunner1]: https://v1.httprunner.org/

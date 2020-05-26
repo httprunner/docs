@@ -2,7 +2,7 @@ HttpRunner 通过复用 [`Locust`][Locust]，可以在无需对 YAML/JSON 进行
 
 ## 原理图
 
-![](/images/loadtest-schematic-diagram.jpg)
+![](../images/loadtest-schematic-diagram.jpg)
 
 ## 安装依赖包
 
@@ -149,7 +149,7 @@ $ locusts -f examples/first-testcase.yml --processes 4
 [2017-08-26 23:51:47,085] bogon/INFO/locust.runners: Client 'bogon_80a804cda36b80fac17b57fd2d5e7cdb' reported as ready. Currently 4 clients ready to swarm.
 ```
 
-![](/images/locusts-full-speed.jpg)
+![](../images/locusts-full-speed.jpg)
 
 Enjoy!
 

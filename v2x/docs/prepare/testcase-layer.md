@@ -8,7 +8,7 @@
 
 逻辑关系图如下所示：
 
-![](/images/testcase-layer.png)
+![](../images/testcase-layer.png)
 
 同时，强调如下几点核心概念：
 

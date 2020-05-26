@@ -3,7 +3,7 @@
 
 通过接口自动化实现 TesterHome 的登录退出功能。
 
-![](/images/testerhome-login.png)
+![](../images/testerhome-login.png)
 
 功能描述：
 
@@ -17,13 +17,13 @@
 
 在浏览器中人工进行登录操作，同时使用抓包工具进行抓包。抓包时建议使用过滤器（Filter），常用的做法是采用被测系统的 host，将无关请求过滤掉。
 
-![](/images/testerhome-login-charles.png)
+![](../images/testerhome-login-charles.png)
 
 选择需要生成测试用例的请求，导出为 HTTP Archive (.har) 格式的文件。
 
-![](/images/testerhome-charles-export.png)
+![](../images/testerhome-charles-export.png)
 
-![](/images/charles-export-har.png)
+![](../images/charles-export-har.png)
 
 ### 转换生成测试用例
 
@@ -188,7 +188,7 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 即可搜索得到该字段是在哪个接口中从服务器端返回值客户端的。
 
-![](/images/charles-search-response.png)
+![](../images/charles-search-response.png)
 
 有时候可能搜索会得到多个结果，那么在确定是使用哪个接口响应的时候，遵循两个原则即可：
 
@@ -197,7 +197,7 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 通过前面的搜索可知，`X-CSRF-Token` 的值是在第一个接口中响应返回的。
 
-![](/images/charles-locate-response-token.png)
+![](../images/charles-locate-response-token.png)
 
 确定出具体的接口后，那么就可以在测试脚本中从该接口使用 `extract` 提取对应的字段，然后在后续接口中引用提取出的字段。
 

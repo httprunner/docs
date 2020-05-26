@@ -32,9 +32,9 @@ $ flask run
 
 例如，在本案例中，我们先进行权限校验，然后成功创建一个用户，对应的网络抓包内容如下图所示：
 
-![](/images/demo-quickstart-http-1.jpg)
+![](./images/demo-quickstart-http-1.jpg)
 
-![](/images/demo-quickstart-http-2.jpg)
+![](./images/demo-quickstart-http-2.jpg)
 
 通过抓包，我们可以看到具体的接口信息，包括请求的URL、Method、headers、参数和响应内容等内容，基于这些信息，我们就可以开始编写测试用例了。
 
@@ -609,11 +609,11 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 例如，在运行完 [demo-quickstart-1.json](data/demo-quickstart-1.json) 后，将生成如下形式的测试报告：
 
-![](/images/report-demo-quickstart-1-overview.jpg)
+![](./images/report-demo-quickstart-1-overview.jpg)
 
-![](/images/report-demo-quickstart-1-log2.jpg)
+![](./images/report-demo-quickstart-1-log2.jpg)
 
-![](/images/report-demo-quickstart-1-traceback.jpg)
+![](./images/report-demo-quickstart-1-traceback.jpg)
 
 关于测试报告的详细内容，请查看[《测试报告》](/run-tests/report/)部分。
 

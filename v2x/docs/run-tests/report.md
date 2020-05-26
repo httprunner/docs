@@ -37,18 +37,18 @@ INFO     Generated Html report: /Users/debugtalk/MyProjects/HttpRunner-dev/httpr
 
 在 Summary 中，会罗列本次测试的整体信息，包括测试开始时间、总运行时长、运行的Python版本和系统环境、运行结果统计数据。
 
-![](/images/report-demo-quickstart-1-overview.jpg)
+![](../images/report-demo-quickstart-1-overview.jpg)
 
 在 Details 中，会详细展示每一条测试用例的运行结果。
 
 点击测试用例对应的 log 按钮，会在弹出框中展示该用例执行的详细数据，包括请求的 headers 和 body、响应的 headers 和 body、校验结果、响应、响应耗时（elapsed）等信息。
 
-![](/images/report-demo-quickstart-1-log1.jpg)
-![](/images/report-demo-quickstart-1-log2.jpg)
+![](../images/report-demo-quickstart-1-log1.jpg)
+![](../images/report-demo-quickstart-1-log2.jpg)
 
 若测试用例运行不成功（failed/error/skipped），则在该测试用例的 detail 中会出现 traceback 按钮，点击该按钮后，会在弹出框中展示失败的堆栈日志，或者 skipped 的原因。
 
-![](/images/report-demo-quickstart-1-traceback.jpg)
+![](../images/report-demo-quickstart-1-traceback.jpg)
 
 点击查看[测试报告](/data/reports/1548561464.html)。
 
