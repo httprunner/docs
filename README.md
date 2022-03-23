@@ -1,22 +1,21 @@
-# HttpRunner V1.x 中文使用文档
+# HttpRunner 用户文档
 
 ## 在线阅读
-
-本文档托管在`GitHub Pages`上，访问地址：
-
-http://v1.httprunner.org
 
 ## 本地预览
 
 ### 安装依赖
 
-本项目文档采用[`mkdocs`][mkdocs]生成，如需在本地预览查看，则需安装该工具。
+本项目文档采用 [`mkdocs`][mkdocs] 生成，如需在本地预览查看，则需安装该工具。
+
+推荐使用 Python 虚拟环境。
 
 ```bash
-$ pip install mkdocs
+$ python3 -m venv .venv
+$ source .venv/bin/activate
 ```
 
-`mkdocs`支持主题配置，本项目选择了第三方的[`mkdocs-material`][mkdocs-material]。
+install [`mkdocs`][mkdocs] and [`material design`][mkdocs-material]
 
 ```bash
 $ pip install mkdocs-material
@@ -27,6 +26,7 @@ $ pip install mkdocs-material
 在项目根目录中运行如下命令：
 
 ```bash
+$ cd v3x
 $ mkdocs serve
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
